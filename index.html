@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Yeon Woo Website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Silkscreen:wght@400;700&display=swap");
+    body {
+      background-image: url("seo-2394237_1280.jpg");
+    }
+
+    h1 {
+      font-family: "Silkscreen", sans-serif;
+      font-weight: 400;
+      font-size: 1500%;
+      text-align: center;
+      color: rgb(11, 83, 59);
+    }
+    h6 {
+      font-family: "Silkscreen", sans-serif;
+      text-align: center;
+      font-weight: 400;
+    }
+  </style>
+  <body>
+    <div
+      class="w3-sidebar w3-bar-block"
+      style="display: none; z-index: 5"
+      id="mySidebar"
+    >
+      <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a class="w3-bar-item w3-button">Home</a>
+      <a
+        href="https://gogumahotteok.github.io/profile1/"
+        class="w3-bar-item w3-button"
+        >About me</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile2/"
+        class="w3-bar-item w3-button"
+        >my friends</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile3/"
+        class="w3-bar-item w3-button"
+        >Python Storage</a
+      >
+    </div>
+
+    <div
+      class="w3-overlay"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      id="myOverlay"
+    ></div>
+
+    <div>
+      <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">
+        &#9776;
+      </button>
+      <div class="w3-container">
+        <h1>Welcome!!</h1>
+        <h6>Jeonbuk National University</h6>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
